@@ -27,7 +27,7 @@ def _bbAndMask(image, cnts):
     _maskOutline(image, cnts, ax2)
     st.pyplot(fig)
   
-  def _bbox(image, cnts, ax):
+def _bbox(image, cnts, ax):
   ax.imshow(image)
   for c in cnts:
     area = cv2.contourArea(c)
